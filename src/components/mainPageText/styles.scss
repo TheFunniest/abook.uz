@@ -1,0 +1,9 @@
+.text-main {
+  width: 50%;
+  margin-top: 100px;
+  color: #ffff;
+  & > p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
