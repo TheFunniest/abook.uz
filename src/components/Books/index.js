@@ -15,6 +15,9 @@ const Books = () => {
       </div>
       <div className="books-slider">
         <BooksSlider />
+        <div className="books-bg">
+
+        </div>
       </div>
     </div>
   );

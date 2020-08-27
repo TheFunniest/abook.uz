@@ -36,11 +36,15 @@
 
   &-slider {
     overflow: hidden;
-    background: linear-gradient(
-      270deg,
-      #f1f2f6 8.85%,
-      rgba(241, 242, 246, 0.485714) 67.19%,
-      rgba(241, 242, 246, 0) 100%
-    );
+    position: relative;
+  }
+  &-bg {
+    background: linear-gradient(270deg, #f1f2f6 8.85%, rgba(241, 242, 246, 0.485714) 67.19%, rgba(241, 242, 246, 0) 100%);
+    position: absolute;
+    width: 186px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 99;
   }
 }
