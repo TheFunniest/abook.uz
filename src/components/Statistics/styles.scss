@@ -1,0 +1,31 @@
+.statistics {
+    padding: 30px 0;
+    color: #0A3D62;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        &__item {
+            display: flex;
+            align-items: center;
+        }
+
+        &__textWrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        &__textPrimary {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        &__textSecondary {
+            font-size: 13px;
+        }
+
+    }
+
+}

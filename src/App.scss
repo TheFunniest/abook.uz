@@ -16,6 +16,7 @@
   margin-left: auto;
 }
 
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -36,5 +37,11 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1180px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1426px;
   }
 }

@@ -1,0 +1,37 @@
+.card {
+  width: 214px;
+  margin: 20px 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(20, 44, 74, 0.1);
+  border-radius: 20px;
+  padding: 18px;
+  &-image {
+    background-color: #f1f2f6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > img {
+      padding: 15px 40px;
+    }
+  }
+  &-name {
+    margin-top: 15px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  &-author {
+    margin-top: 8px;
+    color: #000000;
+    font-size: 14px;
+  }
+  &-genre {
+      margin-top: 8px;
+      color: #9EABAF;
+      font-size: 10px;
+  }
+  &-rating {
+      margin-top: 10px;
+  }
+}
