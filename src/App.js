@@ -9,23 +9,26 @@ import Index from "./pages/index";
 function App() {
   return (
     <div className="App">
-      <CookieConsent
-        location="bottom"
-        buttonText="Sure man!!"
-        cookieName="myAwesomeCookieName2"
-        style={{ background: "#2B373B" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-        expires={150}
-        sameSite="lax"
-      >
-        This website uses cookies to enhance the user experience.{" "}
-        <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
-      </CookieConsent>
       <Switch>
         <Route path="/" exact>
           <Index />
         </Route>
       </Switch>
+      <div className="container">
+        <CookieConsent
+          containerClasses="coockie"
+          contentClasses="coockie-text"
+          buttonClasses="coockie-btn"
+          buttonText="Принять"
+          cookieName="myAwesomeCookieName2"
+          disableStyles
+          expires={150}
+          // sameSite="lax"
+        >
+          Мы используем файлы «cookies» и похожие технологии на нашем <br />{" "}
+          веб-сайте, чтобы улучшить работу и повысить эффективность сайта
+        </CookieConsent>
+      </div>
     </div>
   );
 }
