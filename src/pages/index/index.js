@@ -17,7 +17,7 @@ const IndexPage = () => {
           <MainPageText />
         </div>
       </div>
-      <div className={styles.infoSection} id="statistics">
+      <div className={styles.infoSection}>
         <div className="container">
           <Statistics />
           <Books />

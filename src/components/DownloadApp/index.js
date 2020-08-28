@@ -7,7 +7,7 @@ import { a } from "react-router-dom";
 
 const DonwloadApp = () => {
   return (
-    <div className="download">
+    <div className="download" id="download">
       <div className="download-image">
         <Phones />
       </div>

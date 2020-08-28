@@ -14,41 +14,44 @@ const Header = () => {
       <div className="header-nav">
         <ul className="header-nav__list">
           <li className="header-nav__item">
-            <Link to="#statistics" className="header-nav__link">
+            <a href="#statistics" className="header-nav__link">
               Статистика
-            </Link>
+            </a>
           </li>
           <li className="header-nav__item">
-            <Link to="/new_books" className="header-nav__link">
+            <a href="#new_books" className="header-nav__link">
               Новые книги
-            </Link>
+            </a>
           </li>
           <li className="header-nav__item">
-            <Link to="/download" className="header-nav__link">
+            <a href="#download" className="header-nav__link">
               Скачать
-            </Link>
+            </a>
           </li>
           <li className="header-nav__item">
-            <Link to="/order" className="header-nav__link">
+            <a href="#order" className="header-nav__link">
               Стол заказов
-            </Link>
+            </a>
           </li>
           <li className="header-nav__item">
-            <Link to="/partners" className="header-nav__link">
+            <a href="#partners" className="header-nav__link">
               Партнёры
-            </Link>
+            </a>
           </li>
           <li className="header-nav__item">
-            <Link to="/contact" className="header-nav__link">
+            <a href="#contact" className="header-nav__link">
               Контакты
-            </Link>
+            </a>
           </li>
           <li className="header-nav__item">
             <span className="header-nav__link header-lang">
-              Язык <Arrow style={{
+              Язык{" "}
+              <Arrow
+                style={{
                   marginBottom: 1,
-                  marginLeft: 2
-              }}/>
+                  marginLeft: 2,
+                }}
+              />
               <ul className="header-lang__dropdown">
                 <li>O'zbekcha</li>
                 <li>Русский</li>

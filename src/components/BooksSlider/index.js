@@ -9,7 +9,7 @@ const BooksSlider = () => {
   SwiperCore.use([Autoplay]);
   const slidesArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
-    <Swiper spaceBetween={25} slidesPerView={4} >
+    <Swiper spaceBetween={25} slidesPerView={4} autoplay >
       {slidesArr.map((el) => {
         return (
           <SwiperSlide key={el}>

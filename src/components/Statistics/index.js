@@ -9,7 +9,7 @@ import { ReactComponent as Users } from "../../assets/images/users.svg";
 
 const Statistics = () => {
   return (
-    <div className="statistics">
+    <div className="statistics"  id="statistics">
       <ul className="statistics-list">
         <li className="statistics-list__item">
           <Books />

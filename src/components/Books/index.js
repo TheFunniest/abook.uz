@@ -5,7 +5,7 @@ import BooksSlider from "../BooksSlider";
 
 const Books = () => {
   return (
-    <div className="books">
+    <div className="books" id="new_books">
       <div className="books-section">
         <h2>Новинки и бестселлеры</h2>
         <p>Популярные и начинающие авторы, крупнейшие и нишевые издательства</p>
