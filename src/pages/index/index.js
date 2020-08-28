@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import MainPageText from "../../components/mainPageText";
 import Statistics from "../../components/Statistics";
 import Books from "../../components/Books";
+import DonwloadApp from "../../components/DownloadApp";
 
 const IndexPage = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage = () => {
         <div className="container">
           <Statistics />
           <Books />
+          <DonwloadApp />
         </div>
       </div>
     </>
