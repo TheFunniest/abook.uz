@@ -1,0 +1,11 @@
+.booksList-wrapper {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.books-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    list-style: none;
+}

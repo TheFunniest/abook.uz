@@ -3,7 +3,6 @@ import "./styles.scss";
 import { ReactComponent as Phones } from "../../assets/images/phones.svg";
 import { ReactComponent as AppleIcon } from "../../assets/images/app-store.svg";
 import { ReactComponent as GooglePlayIcon } from "../../assets/images/google-play.svg";
-import { a } from "react-router-dom";
 
 const DonwloadApp = () => {
   return (
