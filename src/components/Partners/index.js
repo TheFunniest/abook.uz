@@ -12,7 +12,7 @@ import benoor from "../../assets/images/benoor.png";
 
 const Partners = () => {
   return (
-    <div className="partners">
+    <div className="partners" id="partners">
       <div className="container">
         <h2 className="partners-title">Партнёры</h2>
         <div className="partners-carousel">

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo-light.svg";
 import { ReactComponent as Arrow } from "../../assets/images/dropdown_arrow.svg";
 
-const Header = () => {
+const Header = (props) => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -27,7 +27,9 @@ const Header = () => {
   }
 
   return (
-    <header className={classes.join(" ")}>
+    <header className={classes.join(" ")} style={{
+      backgroundColor: props.dark && "#282d30" 
+    }}>
       <div className="container">
  <div className="header-content">
  <Link to="/">
@@ -36,32 +38,32 @@ const Header = () => {
         <div className="header-nav">
           <ul className="header-nav__list">
             <li className="header-nav__item">
-              <a href="#statistics" className="header-nav__link">
+              <a href="/#statistics" className="header-nav__link">
                 Статистика
               </a>
             </li>
             <li className="header-nav__item">
-              <a href="#new_books" className="header-nav__link">
+              <a href="/#new_books" className="header-nav__link">
                 Новые книги
               </a>
             </li>
             <li className="header-nav__item">
-              <a href="#download" className="header-nav__link">
+              <a href="/#download" className="header-nav__link">
                 Скачать
               </a>
             </li>
             <li className="header-nav__item">
-              <a href="#order" className="header-nav__link">
+              <a href="/#order" className="header-nav__link">
                 Стол заказов
               </a>
             </li>
             <li className="header-nav__item">
-              <a href="#partners" className="header-nav__link">
+              <a href="/#partners" className="header-nav__link">
                 Партнёры
               </a>
             </li>
             <li className="header-nav__item">
-              <a href="#contact" className="header-nav__link">
+              <a href="/#contact" className="header-nav__link">
                 Контакты
               </a>
             </li>
