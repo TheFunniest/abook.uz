@@ -1,0 +1,23 @@
+.partners {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-color: #F1F2F6;
+
+    &-title {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &-carousel {
+        padding-top: 60px;
+
+        .parterns-carousel__item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .swiper-wrapper {
+            align-items: center;
+        }
+    }
+}

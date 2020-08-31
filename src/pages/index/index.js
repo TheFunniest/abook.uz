@@ -8,6 +8,7 @@ import Statistics from "../../components/Statistics";
 import Books from "../../components/Books";
 import DonwloadApp from "../../components/DownloadApp";
 import Order from "../../components/Order";
+import Partners from "../../components/Partners";
 
 const IndexPage = () => {
   return (
@@ -26,6 +27,7 @@ const IndexPage = () => {
         </div>
       </div>
       <Order />
+      <Partners />
     </>
   );
 };
