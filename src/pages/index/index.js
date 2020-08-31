@@ -7,6 +7,7 @@ import MainPageText from "../../components/mainPageText";
 import Statistics from "../../components/Statistics";
 import Books from "../../components/Books";
 import DonwloadApp from "../../components/DownloadApp";
+import Order from "../../components/Order";
 
 const IndexPage = () => {
   return (
@@ -24,6 +25,7 @@ const IndexPage = () => {
           <DonwloadApp />
         </div>
       </div>
+      <Order />
     </>
   );
 };

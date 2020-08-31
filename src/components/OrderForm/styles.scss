@@ -1,0 +1,45 @@
+.order-form {
+    width: 50%;
+    padding: 32px 0;
+
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+
+    &>input {
+        width: 48%;
+        box-shadow: 0px 4px 12px rgba(10, 61, 98, 0.15);
+        padding: 18px 30px;
+        border-radius: 500px;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        font-size: 16px;
+
+        &::placeholder {
+            color: #747D8C;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+            &:nth-child(2) {
+                margin: 25px 0;
+            }
+}
+
+.order-btn {
+    text-align: center;
+    background-color: #115E96;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 18px;
+    border: none;
+    padding: 16px 63px;
+    margin-left: auto;
+    display: block;
+    max-width: 188px;
+    cursor: pointer;
+}
+}

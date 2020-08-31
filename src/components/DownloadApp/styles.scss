@@ -4,13 +4,13 @@
 
   &-image {
     margin-left: 90px;
+    width: 50%;
   }
 
   &-links {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
+    width: 57%;
     color: #042843;
     padding-top: 30px;
 
@@ -22,7 +22,7 @@
     &__stores {
       display: flex;
       margin-top: 34px;
-      margin-left: 120px;
+      margin-right: auto;
 
       & > a {
         text-decoration: none;

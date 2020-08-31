@@ -1,0 +1,25 @@
+.order {
+  background-color: #e6eff5;
+  display: flex;
+  &-wrapper {
+    display: flex;
+  }
+  &-about {
+    background-image: url("../../assets/images/order-about-bg.svg");
+    width: 50%;
+    text-align: right;
+    background-position: right;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    padding-right: 72px;
+  }
+  &-title {
+    color: #042843;
+  }
+
+  &-text {
+    color: #115e96;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
