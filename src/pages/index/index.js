@@ -14,8 +14,8 @@ const IndexPage = () => {
   return (
     <>
       <div className={styles.mainSection}>
+        <Header />
         <div className="container">
-          <Header />
           <MainPageText />
         </div>
       </div>

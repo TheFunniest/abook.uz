@@ -1,8 +1,15 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 15px;
+
+  
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
   &-nav {
     &__list {
       list-style: none;
@@ -67,4 +74,15 @@
       opacity: 1;
     }
   }
+}
+
+.scrolled {
+  transition: background-color 200ms ease;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #282d30;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.3);
 }
