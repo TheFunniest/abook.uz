@@ -5,6 +5,7 @@ import CoockieAccept from "./components/CoockieAccept";
 
 // PAGES
 import Index from "./pages/index";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         </Route>
       </Switch>
       <CoockieAccept />
+      <Footer />
     </div>
   );
 }

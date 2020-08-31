@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.scss";
 import { Link } from "react-router-dom";
 // images
-import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { ReactComponent as Logo } from "../../assets/images/logo-light.svg";
 import { ReactComponent as Arrow } from "../../assets/images/dropdown_arrow.svg";
 
 const Header = () => {
