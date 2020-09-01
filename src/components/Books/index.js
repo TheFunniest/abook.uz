@@ -14,7 +14,7 @@ const Books = () => {
         </Link>
       </div>
       <div className="books-slider">
-        <BooksSlider />
+        <BooksSlider count={4}/>
         <div className="books-bg">
 
         </div>
