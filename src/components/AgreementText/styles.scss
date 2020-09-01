@@ -1,0 +1,22 @@
+.agreement {
+    
+    &-text {
+        display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    }
+
+    &-title {
+        color: #192D3D;
+        margin-bottom: 20px;
+    }
+
+    &-info {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+
+}
