@@ -7,8 +7,9 @@ import CoockieAccept from "./components/CoockieAccept";
 import Index from "./pages/index";
 import Footer from "./components/Footer";
 import NewBooks from "./pages/newBooks";
-import Agreement from "./pages/Agreement";
+import Cookies from "./pages/Cookies";
 import Book from "./pages/Book";
+import Agreement from "./pages/Agreement";
 
 function App() {
   return (
@@ -20,11 +21,14 @@ function App() {
         <Route path="/new_books" exact>
           <NewBooks />
         </Route>
-        <Route path="/agreement" exact>
-          <Agreement />
+        <Route path="/cookies" exact>
+          <Cookies />
         </Route>
         <Route path="/book" exact>
           <Book />
+        </Route>
+        <Route path="/agreement" exact>
+          <Agreement />
         </Route>
       </Switch>
       <CoockieAccept />

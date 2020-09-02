@@ -1,11 +1,14 @@
 .mainSection {
-    background-image: url("../../assets/images/mainSectionBg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 520px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 520px;
 
+  @media (max-width: 786px) {
+    height: 342px;
+    background-position: center;
+  }
 }
 
 .infoSection {
-    background-color: #F1F2F6;
+  background-color: #f1f2f6;
 }

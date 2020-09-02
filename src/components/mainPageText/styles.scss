@@ -2,6 +2,15 @@
   width: 40%;
   margin-top: 100px;
   color: #ffff;
+
+
+  @media (max-width: 786px) {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
   & > p {
     margin-top: 15px;
     font-size: 14px;
