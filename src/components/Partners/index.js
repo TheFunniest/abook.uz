@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useMediaQuery } from 'react-responsive'
+
 
 import echoacademy from "../../assets/images/echoacademy.png";
 import test2020 from "../../assets/images/test2020.png";
@@ -11,12 +13,13 @@ import universal from "../../assets/images/universal.png";
 import benoor from "../../assets/images/benoor.png";
 
 const Partners = () => {
+  const isDesktop = useMediaQuery({ minWidth: 786 })
   return (
     <div className="partners" id="partners">
       <div className="container">
         <h2 className="partners-title">Партнёры</h2>
         <div className="partners-carousel">
-        <Swiper slidesPerView={5} autoplay>
+        <Swiper slidesPerView={isDesktop ? 5 : 2} spaceBetween={isDesktop ? null : 40} autoplay>
           <SwiperSlide>
             <div className="parterns-carousel__item">
               <img src={lukoil} alt="lukoil" />

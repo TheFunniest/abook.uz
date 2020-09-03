@@ -6,13 +6,27 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+
+        @media (max-width: 786px) {
+            flex-direction: column;
+        }
     }
 
     &-list {
         list-style: none;
         display: flex;
         margin-left: 15px;
+
+        @media (max-width: 786px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         &__item {
+            
+            @media (max-width: 786px) {
+                margin: 10px 0;
+            }
 
             padding: 0 15px;
             &>a {
@@ -23,6 +37,9 @@
             &>p {
                 color: #A4B0BE;
                 font-size: 14px;
+                @media (max-width: 786px) {
+                    font-size: 13px;
+                }
             }
         }
     }
@@ -31,6 +48,10 @@
         margin-left: auto;
         display: flex;
         align-items: center;
+
+        @media (max-width: 786px) {
+            margin: 40px auto 20px auto; 
+        }
         &-text {
             display: flex;
             flex-direction: column;
