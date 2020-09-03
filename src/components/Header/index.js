@@ -11,7 +11,7 @@ import { ReactComponent as Arrow } from "../../assets/images/dropdown_arrow.svg"
 
 const Header = (props) => {
   const [scrolled, setScrolled] = useState(false);
-  const isMobile = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 768 });
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 90) {
@@ -26,7 +26,7 @@ const Header = (props) => {
   });
 
   let classes = ["header"];
-  if (scrolled && isMobile) {
+  if (scrolled && isDesktop) {
     classes.push("scrolled");
   }
 

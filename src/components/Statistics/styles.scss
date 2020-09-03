@@ -1,31 +1,52 @@
 .statistics {
-    padding: 30px 0;
-    color: #0A3D62;
+  padding: 30px 0;
+  color: #0a3d62;
 
-    &-list {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 
-        &__item {
-            display: flex;
-            align-items: center;
+    &__item {
+      display: flex;
+      align-items: center;
+      @media (max-width: 768px) {
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 15px;
+        & > svg {
+          width: 115px;
+          height: 115px;
         }
-
-        &__textWrapper {
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-        }
-        &__textPrimary {
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        &__textSecondary {
-            font-size: 13px;
-        }
-
+      }
     }
 
+    &__textWrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+    &__textPrimary {
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    &__textSecondary {
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+      font-size: 13px;
+    }
+  }
+}
+
+
+.swiper-pagination-bullet-active {
+    background-color: #0E82C9;
 }

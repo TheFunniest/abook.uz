@@ -1,36 +1,67 @@
+@mixin btn {
+  padding: 14px 15px;
+  text-decoration: none;
+  background-color: #115e96;
+  border-radius: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  width: 62%;
+  margin-left: auto;
+  margin-top: 20px;
+  transition: filter 200ms ease;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 14px rgba(10, 61, 98, 0.25));
+  }
+}
+
 .books {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 4fr 8fr;
   padding-bottom: 90px;
+
+  @media (max-width: 786px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   &-section {
     display: flex;
     flex-direction: column;
-    padding: 115px 70px;
+    padding: 115px 65px;
+
+    @media (max-width: 786px) {
+      padding: 0;
+      margin-bottom: 40px;
+    }
     & > h2 {
       color: #042843;
       text-align: center;
+      @media (max-width: 786px) {
+      }
     }
     & > p {
       margin-top: 15px;
       font-size: 14px;
       color: #115e96;
       text-align: right;
+      @media (max-width: 786px) {
+        text-align: center;
+      }
     }
     &__btn {
-      padding: 14px 15px;
-      text-decoration: none;
-      background-color: #115e96;
-      border-radius: 18px;
-      color: #ffffff;
-      font-weight: bold;
-      width: 62%;
-      margin-left: auto;
-      margin-top: 20px;
-      transition: filter 200ms ease;
-      &:hover {
-        filter: drop-shadow(0px 4px 14px rgba(10, 61, 98, 0.25));
+      @include btn();
+      @media (max-width: 786px) {
+        display: none;
       }
+    }
+    &__btnMobile {
+      @include btn();
+      @media (min-width: 786px) {
+        display: none;
+      }
+      margin: 40px auto 0 auto;
     }
   }
 
@@ -39,12 +70,20 @@
     position: relative;
   }
   &-bg {
-    background: linear-gradient(270deg, #f1f2f6 8.85%, rgba(241, 242, 246, 0.485714) 67.19%, rgba(241, 242, 246, 0) 100%);
+    background: linear-gradient(
+      270deg,
+      #f1f2f6 8.85%,
+      rgba(241, 242, 246, 0.485714) 67.19%,
+      rgba(241, 242, 246, 0) 100%
+    );
     position: absolute;
     width: 186px;
     height: 100%;
     right: 0;
     top: 0;
     z-index: 99;
+    @media (max-width: 786px) {
+      display: none;
+    }
   }
 }

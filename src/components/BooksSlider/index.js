@@ -5,7 +5,7 @@ import BookCard from "../BookCard";
 import "./styles.scss";
 import SwiperCore, { Autoplay } from "swiper";
 
-const BooksSlider = ({ count, title }) => {
+const BooksSlider = ({ count, title, spaceBetween }) => {
   SwiperCore.use([Autoplay]);
   const slidesArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
@@ -17,11 +17,11 @@ const BooksSlider = ({ count, title }) => {
     }}>
       {title}
       </h2> : null}
-    <Swiper spaceBetween={25} slidesPerView={count} autoplay >
+    <Swiper spaceBetween={spaceBetween} slidesPerView={count}  >
       {slidesArr.map((el) => {
         return (
           <SwiperSlide key={el}>
-            <BookCard />
+            <BookCard mb/>
           </SwiperSlide>
         );
       })}
