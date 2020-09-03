@@ -26,7 +26,7 @@ const Header = (props) => {
   });
 
   let classes = ["header"];
-  if (scrolled && isDesktop) {
+  if (scrolled) {
     classes.push("scrolled");
   }
 
