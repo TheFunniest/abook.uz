@@ -6,15 +6,18 @@ import StoreLinks from "../StoreLinks";
 const DonwloadApp = () => {
   return (
     <div className="download" id="download">
+      <h2 className="download-links__textMobile">
+        Скачайте приложение для Вашего смартфона
+      </h2>
       <div className="download-image">
         <Phones />
       </div>
       <div className="download-links">
-        <p className="download-links__text">
+        <h2 className="download-links__text">
           Скачайте приложение для Вашего смартфона
-        </p>
+        </h2>
         <div className="download-links__stores">
-         <StoreLinks/>
+          <StoreLinks />
         </div>
       </div>
     </div>

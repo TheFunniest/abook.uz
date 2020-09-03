@@ -2,9 +2,22 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 786px) {
+    flex-direction: column;
+  }
+
   &-image {
     margin-left: 90px;
     width: 50%;
+
+    @media (max-width: 786px) {
+      width: 100%;
+      margin-left: 0;
+
+      & > svg {
+        width: 100%;
+      }
+    }
   }
 
   &-links {
@@ -14,21 +27,37 @@
     color: #042843;
     padding-top: 30px;
 
+    @media (max-width: 786px) {
+      padding-top: 0;
+      width: 100%;
+      margin-bottom: 50px;
+    }
     &__text {
-      font-size: 24px;
-      font-weight: bold;
+      @media (max-width: 786px) {
+        display: none;
+      }
+    }
+    &__textMobile {
+      text-align: center;
+      margin-bottom: 20px;
+      @media (min-width: 786px) {
+        display: none;
+      }
     }
 
     &__stores {
       display: flex;
       margin-top: 34px;
       margin-right: auto;
-
+      @media (max-width: 786px) {
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 20px;
+      }
       & > a {
         text-decoration: none;
         color: #042843;
       }
     }
-
   }
 }

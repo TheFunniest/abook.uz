@@ -14,4 +14,8 @@
     & > p {
       padding: 0 17px;
     }
+
+    @media (max-width: 786px) {
+      margin-right: 0;
+    }
   }
