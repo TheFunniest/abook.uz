@@ -8,4 +8,8 @@
     font-weight: bold;
     background: linear-gradient(98.29deg, #115E96 0.41%, #0A3D62 56.36%);
     color: white;
+
+    @media (max-width: 786px) {
+        text-align: center;
+    }
 }

@@ -13,7 +13,7 @@ const BooksCard = ({ loading, mb }) => {
       }}
     >
       {loading ? (
-        <Skeleton width={178} height={178} />
+        <Skeleton  height={178} />
       ) : (
         <div className="card-image">
           <img src={romeo} alt="romeo and juliett" />
@@ -23,7 +23,7 @@ const BooksCard = ({ loading, mb }) => {
         {loading ? <Skeleton width={117} height={17} /> : "Romeo & Juliett"}
       </p>
       <p className="card-author">
-        {loading ? <Skeleton width={139} height={17} /> : "William Shakespare"}
+        {loading ? <Skeleton  height={17} /> : "William Shakespare"}
       </p>
       <p className="card-genre">
         {loading ? (
