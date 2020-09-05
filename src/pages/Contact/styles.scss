@@ -1,0 +1,57 @@
+.contact {
+  background-color: #f1f2f6;
+  padding-top: 40px;
+
+  &-title {
+    color: #192d3d;
+    margin-bottom: 20px;
+  }
+
+  &-text {
+      font-size: 14px;
+      color: #000000;
+      margin-bottom: 50px;
+  }
+
+  &-info {
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+        margin-bottom: 55px;
+
+        @media (max-width: 786px) {
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+      &__item {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+
+          &>p {
+              color: #000000;
+              font-size: 14px;
+              min-width: 140px
+          }
+
+          &>svg {
+              margin-right: 25px;
+          }
+      }
+    
+    
+    }
+
+    &-map {
+            margin-bottom: 60px;
+
+            &>* {
+                border: none;
+            }
+    }
+
+}
+
+

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.scss";
 import { Link } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
 
 // images
@@ -11,7 +11,7 @@ import { ReactComponent as Arrow } from "../../assets/images/dropdown_arrow.svg"
 
 const Header = (props) => {
   const [scrolled, setScrolled] = useState(false);
-  const isDesktop = useMediaQuery({ minWidth: 768 });
+  // const isDesktop = useMediaQuery({ minWidth: 768 });
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 90) {

@@ -10,6 +10,7 @@ import NewBooks from "./pages/newBooks";
 import Cookies from "./pages/Cookies";
 import Book from "./pages/Book";
 import Agreement from "./pages/Agreement";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/agreement" exact>
           <Agreement />
+        </Route>
+        <Route path="/contact" exact>
+          <Contact />
         </Route>
       </Switch>
       <CoockieAccept />
