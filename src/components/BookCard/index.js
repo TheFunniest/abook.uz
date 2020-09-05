@@ -20,6 +20,9 @@ const BooksCard = ({ loading, mb, audio }) => {
           <img src={romeo} alt="romeo and juliett" />
           <div className="card-audio">
             <Headphones />
+          <p className="card-audio__dropdown">
+              Аудиокнига
+          </p>
           </div>
         </div>
       )}

@@ -58,12 +58,44 @@
     right: 5%;
     background-color: #fff;
 
-    &:hover {
+    &:hover &__dropdown{
+       
+        opacity: 1;
       
     }
+
+    &__dropdown {
+      position: absolute;
+      color: #000000;
+      text-align: center;
+      top: 40px;
+      left: -18%;
+      font-size: 14px;
+      width: 125px;
+      background-color: #fff;
+      list-style: none;
+      transform: translateX(-30%);
+      border-radius: 5px;
+      padding: 5px 0;
+      opacity: 0;
+      cursor: default;
+      transition: opacity 300ms ease;
+      z-index: 99;
+      &::before {
+        border-bottom: 35px solid #ffff;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        content: "";
+        height: 0;
+        position: absolute;
+        top: -5px;
+        right: 34%;
+        width: 0;
+        z-index: -1;
+      }
 
   }
   .MuiSkeleton-text {
     transform: none !important;
   }
-}
+} }
