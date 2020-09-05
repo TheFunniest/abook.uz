@@ -2,12 +2,12 @@ import React from "react";
 import Header from "../../components/Header";
 import "./styles.scss";
 import Rate from "@material-ui/lab/Rating";
+import BooksSlider from "../../components/BooksSlider";
 
 import StoreLinks from "../../components/StoreLinks";
 import BookImg from "../../assets/images/book_img.png";
 import { ReactComponent as Headphones } from "../../assets/images/headphones.svg";
 import { ReactComponent as Glasses } from "../../assets/images/glasses.svg";
-import BooksSlider from "../../components/BooksSlider";
 
 
 
@@ -36,7 +36,7 @@ const Book = () => {
               </div>
               <div className="book-rating">
                 <p>Оцените книгу</p>
-                <Rate size="medium" />
+                <Rate size="medium" name="rating" />
               </div>
             </div>
             <div className="book-about">
@@ -125,7 +125,7 @@ const Book = () => {
                     </div>
           </div>
             <div className="book-slider">
-                    <BooksSlider title="Другие книги этого автора" count={6}/>
+                    <BooksSlider count={6} title="Другие книги этого автора" spaceBetween={25} />
             </div>
         </div>
       </div>

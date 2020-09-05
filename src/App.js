@@ -10,6 +10,7 @@ import NewBooks from "./pages/newBooks";
 import Cookies from "./pages/Cookies";
 import Book from "./pages/Book";
 import Agreement from "./pages/Agreement";
+import Contact from "./pages/Contact";
 
 function App() {
   return (

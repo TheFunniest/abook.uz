@@ -70,9 +70,9 @@ const Header = (props) => {
                 </a>
               </li>
               <li className="header-nav__item">
-                <a href="/#contact" className="header-nav__link">
+                <Link to="/contact" className="header-nav__link">
                   Контакты
-                </a>
+                </Link>
               </li>
               <li className="header-nav__item">
                 <span className="header-nav__link header-lang">
