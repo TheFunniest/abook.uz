@@ -1,5 +1,5 @@
 .card {
-  max-width:214px;
+  max-width: 214px;
   // margin: 20px 0;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(20, 44, 74, 0.1);
@@ -12,7 +12,7 @@
   }
   cursor: pointer;
   &:hover {
-    color: #115E96;
+    color: #115e96;
   }
   &-image {
     background-color: #f1f2f6;
@@ -20,8 +20,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 14px 36px;
     & > img {
-      padding: 15px 40px;
       @media (max-width: 425px) {
         max-height: 135px;
       }
@@ -37,16 +38,32 @@
     font-size: 14px;
   }
   &-genre {
-      margin-top: 8px;
-      color: #9EABAF;
-      font-size: 10px;
+    margin-top: 8px;
+    color: #9eabaf;
+    font-size: 10px;
   }
   &-rating {
-      margin-top: 10px;
+    margin-top: 10px;
   }
-}
 
+  &-audio {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    bottom: 5%;
+    right: 5%;
+    background-color: #fff;
 
-.MuiSkeleton-text {
-  transform: none !important;
+    &:hover {
+      
+    }
+
+  }
+  .MuiSkeleton-text {
+    transform: none !important;
+  }
 }
