@@ -2,10 +2,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 520px;
+  padding-top: 85px;
+  background-position: center;
+
 
   @media (max-width: 786px) {
     height: 342px;
-    background-position: center;
+    background-position: left;
   }
 }
 

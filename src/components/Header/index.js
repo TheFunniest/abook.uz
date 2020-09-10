@@ -14,7 +14,7 @@ const Header = (props) => {
   // const isDesktop = useMediaQuery({ minWidth: 768 });
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 90) {
+    if (offset > 70) {
       setScrolled(true);
     } else {
       setScrolled(false);
