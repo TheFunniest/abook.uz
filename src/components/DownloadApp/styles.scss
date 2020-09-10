@@ -47,6 +47,7 @@
 
     &__stores {
       display: flex;
+      gap: 18px;
       margin-top: 34px;
       margin-right: auto;
       @media (max-width: 786px) {

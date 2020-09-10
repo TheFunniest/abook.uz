@@ -10,7 +10,7 @@ const StoreLinks = () => {
         <div className="store">
           <AppleIcon />
           <p>
-            Доступно на <br /> AppStore
+            Доступно на AppStore
           </p>
         </div>
       </a>
@@ -18,7 +18,7 @@ const StoreLinks = () => {
         <div className="store">
           <GooglePlayIcon />
           <p>
-            Доступно на <br /> Google Play
+            Доступно на Google Play
           </p>
         </div>
       </a>
