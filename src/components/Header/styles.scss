@@ -37,6 +37,7 @@
       text-decoration: none;
       color: #ffffff;
       font-size: 13px;
+      cursor: pointer;
       &:hover {
         text-decoration: none;
         color: #fff;
@@ -46,6 +47,7 @@
   &-lang {
     cursor: pointer;
     position: relative;
+    user-select: none;
 
     &__dropdown {
       position: absolute;

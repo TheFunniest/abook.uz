@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { useMediaQuery } from "react-responsive";
+import { Element } from "react-scroll";
 
 // IMAGES
 import mainSectionBg from "../../assets/images/mainSectionBg.jpg";
@@ -34,13 +35,23 @@ const IndexPage = () => {
       </div>
       <div className={styles.infoSection}>
         <div className="container">
-          <Statistics />
-          <Books />
-          <DonwloadApp />
+          <Element name="statistics">
+            <Statistics />
+          </Element>
+          <Element name="new_books">
+            <Books />
+          </Element>
+          <Element name="download">
+            <DonwloadApp />
+          </Element>
         </div>
       </div>
-      <Order />
-      <Partners />
+      <Element name="order">
+        <Order />
+      </Element>
+      <Element name="partners">
+        <Partners />
+      </Element>
     </>
   );
 };

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./styles.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { useMediaQuery } from "react-responsive";
-
+import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom"
 
 // images
 import { ReactComponent as Logo } from "../../assets/images/logo-light.svg";
 import { ReactComponent as Arrow } from "../../assets/images/dropdown_arrow.svg";
-
 
 const Header = (props) => {
   const [scrolled, setScrolled] = useState(false);
@@ -39,40 +39,75 @@ const Header = (props) => {
     >
       <div className="container">
         <div className="header-content">
-          <Link to="/">
+          <RouterLink to="/">
             <Logo />
-          </Link>
+          </RouterLink>
           <div className="header-nav">
             <ul className="header-nav__list">
               <li className="header-nav__item">
-                <a href="/#statistics" className="header-nav__link">
+                <Link
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={400}
+                  to="statistics"
+                  className="header-nav__link"
+                >
                   Статистика
-                </a>
-              </li>
-              <li className="header-nav__item">
-                <a href="/#new_books" className="header-nav__link">
-                  Новые книги
-                </a>
-              </li>
-              <li className="header-nav__item">
-                <a href="/#download" className="header-nav__link">
-                  Скачать
-                </a>
-              </li>
-              <li className="header-nav__item">
-                <a href="/#order" className="header-nav__link">
-                  Стол заказов
-                </a>
-              </li>
-              <li className="header-nav__item">
-                <a href="/#partners" className="header-nav__link">
-                  Партнёры
-                </a>
-              </li>
-              <li className="header-nav__item">
-                <Link to="/contact" className="header-nav__link">
-                  Контакты
                 </Link>
+              </li>
+              <li className="header-nav__item">
+                <Link
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={400}
+                  to="new_books"
+                  className="header-nav__link"
+                >
+                  Новые книги
+                </Link>
+              </li>
+              <li className="header-nav__item">
+                <Link
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={400}
+                  to="download"
+                  className="header-nav__link"
+                >
+                  Скачать
+                </Link>
+              </li>
+              <li className="header-nav__item">
+                <Link
+                  className="header-nav__link"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={400}
+                  to="order"
+                >
+                  Стол заказов
+                </Link>
+              </li>
+              <li className="header-nav__item">
+                <Link
+                  to="partners"
+                  className="header-nav__link"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={400}
+                >
+                  Партнёры
+                </Link>
+              </li>
+              <li className="header-nav__item">
+                <RouterLink to="/contact" className="header-nav__link">
+                  Контакты
+                </RouterLink>
               </li>
               <li className="header-nav__item">
                 <span className="header-nav__link header-lang">
@@ -93,9 +128,9 @@ const Header = (props) => {
           </div>
         </div>
         <div className="header-mobile">
-          <Link to="/">
+          <RouterLink to="/">
             <Logo />
-          </Link>
+          </RouterLink>
           <span className="header-nav__link header-lang">
             Язык{" "}
             <Arrow
