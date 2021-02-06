@@ -1,11 +1,11 @@
 .book {
   &-banner {
-    background-image: url("../../assets/images/banner_bookview.png");
+    background-position: center;
+    margin-top: 76px;
+    background-size: cover;
 
-    @media (max-width: 786px) {
-      background-image: url("../../assets/images/banner_bookviewMobile.png");
-      background-size: cover;
-    }
+    // @media (max-width: 786px) {
+    // }
 
     height: 150px;
   }
@@ -41,7 +41,7 @@
     column-gap: 40px;
     @media (max-width: 786px) {
       display: flex;
-      gap: 5px;
+      gap: 15px;
       margin-bottom: 15px;
     }
 
@@ -58,6 +58,8 @@
   &-cover {
     & > img {
       margin-top: -65%;
+      margin-bottom: 20px;
+      border-radius: 20px;
 
       @media (max-width: 786px) {
         margin-top: 0;
@@ -71,9 +73,9 @@
     justify-content: space-around;
     align-items: center;
 
-    @media (max-width: 786px) {
-      justify-content: space-between;
-    }
+    // @media (max-width: 786px) {
+    //   justify-content: space-between;
+    // }
 
     &__item {
       display: flex;
@@ -166,6 +168,7 @@
 
     &__links {
       display: flex;
+      gap: 20px;
 
       @media (max-width: 786px) {
         flex-direction: column;
@@ -236,7 +239,7 @@
       color: #fff;
       font-weight: bold;
       font-size: 14px;
-      padding: 14px 0;
+      padding: 14px;
       text-align: center;
       width: 100%;
       cursor: pointer;

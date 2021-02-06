@@ -25,7 +25,7 @@ function App() {
         <Route path="/cookies" exact>
           <Cookies />
         </Route>
-        <Route path="/book" exact>
+        <Route path="/book/:id" exact>
           <Book />
         </Route>
         <Route path="/agreement" exact>

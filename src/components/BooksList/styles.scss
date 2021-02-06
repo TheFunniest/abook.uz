@@ -13,7 +13,19 @@
     gap: 25px;
     list-style: none;
 
-    @media (max-width: 786px) and (min-width: 425px) {
+
+
+    @media (max-width: 1500px) and (min-width: 1026px) {
+        grid-template-columns: repeat(5, 1fr) ;
+        column-gap: 12px;
+        row-gap: 20px;
+    }
+    @media (max-width: 1025px) and (min-width: 769px) {
+        grid-template-columns: repeat(4, 1fr) ;
+        column-gap: 12px;
+        row-gap: 20px;
+    }
+    @media (max-width: 768px) and (min-width: 425px) {
         grid-template-columns: repeat(3, 1fr) ;
         column-gap: 12px;
         row-gap: 20px;

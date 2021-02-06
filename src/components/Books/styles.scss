@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: column;
     padding: 115px 65px;
+    padding-left: 0;
 
     @media (max-width: 786px) {
       padding: 0;
@@ -37,7 +38,7 @@
     }
     & > h2 {
       color: #042843;
-      text-align: center;
+      text-align: right;
       @media (max-width: 786px) {
       }
     }
@@ -45,6 +46,8 @@
       margin-top: 15px;
       font-size: 14px;
       color: #115e96;
+      max-width: 300px;
+      margin-left: auto;
       text-align: right;
       @media (max-width: 786px) {
         text-align: center;
@@ -52,6 +55,9 @@
     }
     &__btn {
       @include btn();
+      font-size: 14px;
+      text-align: center;
+      max-width: 188px;
       @media (max-width: 786px) {
         display: none;
       }
